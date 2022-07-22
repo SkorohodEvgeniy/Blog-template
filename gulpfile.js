@@ -101,8 +101,6 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
-exports.webpImages = webpImages;
-exports.avifImages = avifImages;
 
 
 exports.build = series(cleanDist, build);
