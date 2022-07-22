@@ -5,11 +5,12 @@ const concat       = require('gulp-concat');
 const browserSync  = require('browser-sync').create();
 const uglify       = require('gulp-uglify-es').default; 
 const autoprefixer = require('gulp-autoprefixer'); 
-const imagemin     = require('gulp-imagemin'); 
-const webp         = require('gulp-webp'); 
+const image     = require('gulp-imagemin'); 
+const webp        = require('gulp-webp'); 
+const avif = require('gulp-avif');
 const del          = require('del'); 
 
-function browsersync() {
+const browsersync = () => {
     browserSync.init({
         server : {
             baseDir: 'app/'
@@ -17,31 +18,41 @@ function browsersync() {
     });
 }
 
-function images() {
-    return src('app/images/**/*')
-    .pipe(webp())
-    .pipe(dest('app/images'))
-    .pipe(imagemin(
-        [
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.mozjpeg({quality: 75, progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
-                ]
-            })
-        ]
-    ))
-    .pipe(dest('dist/images'))
-}
 
-function cleanDist() {
+const images = () => {
+    return src('app/images/**/**.{jpg,jpeg,png,svg}')
+      .pipe(gulpif(isProd, image([
+        image.mozjpeg({
+          quality: 80,
+          progressive: true
+        }),
+        image.optipng({
+          optimizationLevel: 2
+        }),
+      ])))
+      .pipe(dest('app/images'))
+}
+  
+const webpImages = () => {
+    return src('app/images/**/**.{jpg,jpeg,png}')
+      .pipe(webp())
+      .pipe(dest('app/images'))
+}
+  
+const avifImages = () => {
+    return src('app/images/**/**.{jpg,jpeg,png}')
+      .pipe(avif())
+      .pipe(dest('app/images'))
+}
+  
+
+
+
+const cleanDist = () => {
     return del('dist')
 }
 
-function scripts() {
+const scripts = () => {
     return src([
         'node_modules/jquery/dist/jquery.js',
         'node_modules/slick-carousel/slick/slick.js',
@@ -55,7 +66,7 @@ function scripts() {
     .pipe( browserSync.stream() )
 }
 
-function styles() {
+const styles = () => {
     return src('app/scss/style.scss')
         .pipe( scss({outputStyle: 'compressed'}) )
         .pipe(concat('style.css'))
@@ -66,18 +77,19 @@ function styles() {
         .pipe( browserSync.stream() )
 }
 
-function build() {
+const build = () => {
     return src([
         'app/style.css',
         'app/fonts/**/*',
         'app/js/main.min.js',
-        'app/*.html'
+        'app/*.html',
+        'app/images/**/*'
     ], {base: 'app'})
     
     .pipe(dest( 'dist'))
 }
 
-function watching() {
+const watching = () => {
     watch(['app/scss/**/*.scss'], styles);
     watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
     watch(['app/*.html']).on('change', browserSync.reload);
@@ -89,7 +101,9 @@ exports.browsersync = browsersync;
 exports.scripts = scripts;
 exports.images = images;
 exports.cleanDist = cleanDist;
+exports.webpImages = webpImages;
+exports.avifImages = avifImages;
 
 
-exports.build = series(cleanDist, images, build);
-exports.default = parallel(styles, scripts, browsersync, watching);
+exports.build = series(cleanDist, build);
+exports.default = parallel(styles, scripts, webpImages, avifImages, browsersync, watching);

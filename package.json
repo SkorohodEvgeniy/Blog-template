@@ -26,6 +26,7 @@
     "slick-carousel": "^1.8.1"
   },
   "dependencies": {
+    "gulp-avif": "^1.1.1",
     "jquery": "^3.6.0",
     "watch": "^1.0.2"
   },
