@@ -1,802 +1,619 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <div class="header__inner">
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="/about.html">About</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="/gallery.html">Gallery</a>
-                </li>
-              </ul>
-            </nav>
-            <a href="/" class="logo">
-              <picture>
-                <source srcset="images/logo.webp" type="image/webp" />
-                <source srcset="images/logo.avif" type="image/avif" />
-                <img loading="lazy" src="images/logo.png " alt="logo" />
-              </picture>
-            </a>
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="/blog.html">Blog</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="/contact.html">Contact</a>
-                </li>
-              </ul>
-            </nav>
-            <button class="header__btn-menu">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <button class="header__btn">
-              <img
-                src="images/LinkedSprite.svg#src-8"
-                width="40"
-                height="40"
-                alt="icon_menu"
-              />
-            </button>
-            <div class="rightside__menu rightside__menu--close">
-              <button class="rightside__menu-close">
-                <img
-                  src="images/LinkedSprite.svg#src-4"
-                  width="30"
-                  height="30"
-                  alt="close"
-                />
-              </button>
-              <div class="rightside__menu-content">
-                <a href="#" class="rightside__menu-logo">
-                  <picture>
-                    <source srcset="images/logo-big.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/logo-big.png"
-                      alt="logo-big"
-                    />
-                  </picture>
-                </a>
-                <h4 class="rightside__menu-title">Furniture for life</h4>
-                <p class="rightside__menu-text">
-                  Sustainable hot chicken skateboard, dreamcatcher meggings
-                  actually squid. Slow-carb everyday carry +1 art party
-                  microdosing, put a bird on it brooklyn
-                </p>
+    <title>Blog Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700|Anton" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  
+  <div class="site-wrap"  id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+      
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center position-relative">
+          
+            
+            <div class="site-logo">
+              <a href="/" class="text-black"><span class="text-primary">Your Blog</a>
+            </div>
+            
+              <nav class="site-navigation text-center ml-auto" role="navigation">
+			
+                <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                  <li><a href="#home-section" class="nav-link">Home</a></li>
+                  <li><a href="#about-section" class="nav-link">About</a></li>
+                  <li><a href="#discover-section" class="nav-link">Discover</a></li>
+                  <li><a href="#donate-section" class="nav-link">Donate</a></li>
+                  <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                  <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                </ul>
+              </nav>
+          
+            
+
+          <div class="toggle-button d-inline-block d-lg-none">
+            <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black">
+              <span class="icon-menu h3"></span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+      
+    </header>
+    
+    <div class="owl-carousel slide-one-item">
+      <a href="#">
+        <picture>
+          <source srcset="images/hero_1-x4.webp" type='image/webp' media="(max-width: 415px)">
+          <source srcset="images/hero_1-x3.webp" type='image/webp' media="(max-width: 768px)">
+          <source srcset="images/hero_1-x2.webp" type='image/webp' media="(max-width: 1024px)">
+          <source srcset="images/hero_1.webp" type='image/webp' >
+          <source srcset="images/hero_1.avif" type='image/avif' >
+          <img loading='lazy' class="img-fluid" src="images/hero_1.jpg" width='1900' height='1000' alt='hero-1'>
+        </picture>
+      </a>
+      <a href="#">
+        <picture>
+          <source srcset="images/hero_2-X4.webp" type='image/webp' media="(max-width: 415px)">
+          <source srcset="images/hero_2-x3.webp" type='image/webp' media="(max-width: 768px)">
+          <source srcset="images/hero_2-x2.webp" type='image/webp' media="(max-width: 1024px)">
+          <source srcset="images/hero_2.webp" type='image/webp' >
+          <source srcset="images/hero_2.avif" type='image/avif' >
+          <img loading='lazy' class="img-fluid" src="images/hero_2.jpg" width='1900' height='1000' alt='hero-2'>
+        </picture>
+      </a>
+    </div>
+    
+    <div class="d-block d-md-flex intro-engage">
+      <div class="intro-engage">
+        <h2>Rescue An Orphan</h2>
+        <p>Accusantium dignissimos voluptas rem consequatur blanditiis error ratione illo sit quasi ut praesentium magnam</p>
+      </div>
+      <div>
+        <h2>Feed The Hungry</h2>
+        <p>Accusantium dignissimos voluptas rem consequatur blanditiis error ratione illo sit quasi ut praesentium magnam</p>
+      </div>
+      <div>
+        <h2>Free Education</h2>
+        <p>Accusantium dignissimos voluptas rem consequatur blanditiis error ratione illo sit quasi ut praesentium magnam</p>
+      </div>
+    </div>
+
+    <div class="site-section bg-image overlay counter" style="background-image: url('images/hero_1_no-text.webp');
+    " id="about-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-lg-6 mb-4">
+            <figure class="block-img-video-1" data-aos="fade">
+              <a href="https://vimeo.com/45830194" class="popup-vimeo">
+                <span class="icon"><span class="icon-play"></span></span>
                 <picture>
-                  <source
-                    srcset="images/content/rightside__menu.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    loading="lazy"
-                    src="images/content/rightside__menu.jpg"
-                    alt="rightside__menu"
-                  />
+                <source srcset="images/hero_1_no-text-small.webp" type='image/webp'>
+                <source srcset="images/hero_1_no-text-small.avif" type='image/avif'>
+                <img class="mx-auto" loading='lazy' src="images/hero_1_no-text-small.jpg" width='540' height='360' alt='hero_1_no-text'>
                 </picture>
-              </div>
+              </a>
+            </figure>
+          </div>
+          <div class="col-lg-5 ml-auto align-self-lg-center">
+            <h2 class="text-black mb-4 text-uppercase section-title">Our Mission</h2>
+            <p class="text-black">Accusantium dignissimos voluptas rem consequatur blanditiis error ratione illo sit quasi ut, praesentium magnam, pariatur quae, necessitatibus</p>
+            <p class="text-black">Dolor, eligendi voluptate ducimus itaque esse autem perspiciatis sint! Recusandae dolor aliquid inventore sit,</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4 col-lg-0 col-lg-3">
+            <div class="block-counter-1">
+              <span class="number"><span data-number="15">0</span></span>
+              <span class="caption text-black">Number of Orphanage</span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-lg-0 col-lg-3">
+            <div class="block-counter-1">
+              <span class="number"><span data-number="392">0</span></span>
+              <span class="caption text-black">Number of Donations</span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-lg-0 col-lg-3">
+            <div class="block-counter-1">
+              <span class="number"><span data-number="3293">0</span></span>
+              <span class="caption text-black">Number of Volunteers</span>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-lg-0 col-lg-3">
+            <div class="block-counter-1">
+              <span class="number"><span data-number="1212">0</span></span>
+              <span class="caption text-black">Number of Orphans</span>
             </div>
           </div>
         </div>
-      </header>
+      </div>
+    </div>
 
-      <div class="main">
-        <section class="top">
-          <div class="top__inner">
-            <div class="top__slider">
-              <div class="top__slider-item">
-                <picture>
-                  <source
-                    srcset="images/content/slider-img-2x.webp"
-                    type="image/webp"
-                    media="(max-width: 768px)"
-                  />
-                  <source
-                    srcset="images/content/slider-img.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    loading="lazy"
-                    src="images/content/slider-img.png"
-                    alt="slider"
-                  />
-                </picture>
-                <div class="top__slider-info">
-                  <h2 class="top__slider-title">Furniture collection</h2>
-                  <p class="top__slider-text">
-                    Deep v you probably haven't heard of them banh mi synth
-                    actually affogato. Aesthetic lyft ethical drinking vinegar
-                    austint
-                  </p>
+    <div class="site-section bg-light counter" id="discover-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-7 text-center">
+            <div class="block-heading-1">
+              <h2 class="text-black text-uppercase">Discover</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto aperiam unde natus voluptates placeat accusamus vel laborum cupiditate. Reiciendis commodi perferendis dignissimos, amet quis.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+			<div class="col-lg-6 mb-5">
+        <picture>
+        <source srcset="images/hero_1_no-text-small.webp" type='image/webp'>
+        <source srcset="images/hero_1_no-text-small.avif" type='image/avif'>
+        <img loading='lazy' class="mx-auto img-fluid" src="images/hero_1_no-text-small.jpg" width='540' height='360' alt='hero_1_no-text'>
+        </picture>
+			</div>
+			<div class="col-lg-5 ml-auto align-self-center">
+				<h3 class="text-black text-uppercase mb-4">Build Schools in Africa</h3>
+				<p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quis, nemo explicabo cupiditate vero fugiat sit eius sequi.</p>
+				<div class="row mb-4">
+				    <div class="col-sm-6">
+						<div class="block-counter-1 block-counter-1-sm ">
+						    <span class="number"><span data-number="15">0</span></span>
+							<span class="caption text-black">Schools</span>
+						</div>
+				    </div>
+					<div class="col-sm-6">
+						<div class="block-counter-1 block-counter-1-sm text-sm-left text-right">
+						  <span class="number" id="l_num">
+                <span data-number="1039">0</span>
+              </span>
+						  <span class="caption text-black">Students</span>
+						</div>
+					</div>
+				</div> 
+			</div>  
+        </div>
+
+        <div class="row mb-5">
+
+          <div class="col-lg-6 mb-5 order-lg-2">
+            <picture>
+            <source srcset="images/hero_2_no-text-small.webp" type='image/webp'>
+            <source srcset="images/hero_2_no-text-small.avif" type='image/avif'>
+            <img loading='lazy' class="mx-auto img-fluid" src="images/hero_2_no-text-small.jpg" width='540' height='360' alt='hero_2_no-text'>
+            </picture>
+          </div>
+          <div class="col-lg-5 mr-auto align-self-center order-lg-1">
+            <h3 class="text-black text-uppercase mb-4">Feeding Children in Africa</h3>
+            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quis, nemo explicabo cupiditate vero fugiat sit eius sequi.</p>
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="block-counter-1 block-counter-1-sm">
+                  <span class="number"><span data-number="3298">0</span></span>
+                  <span class="caption text-black">Children</span>
                 </div>
               </div>
-              <div class="top__slider-item">
-                <picture>
-                  <source
-                    srcset="images/content/slider-img-2x.webp"
-                    type="image/webp"
-                    media="(max-width: 768px)"
-                  />
-                  <source
-                    srcset="images/content/slider-img.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    loading="lazy"
-                    src="images/content/slider-img.png"
-                    alt="slider"
-                  />
-                </picture>
-                <div class="top__slider-info">
-                  <h2 class="top__slider-title">Furniture collection</h2>
-                  <p class="top__slider-text">
-                    Deep v you probably haven't heard of them banh mi synth
-                    actually affogato. Aesthetic lyft ethical drinking vinegar
-                    austint
-                  </p>
-                </div>
-              </div>
-              <div class="top__slider-item">
-                <picture>
-                  <source
-                    srcset="images/content/slider-img-2x.webp"
-                    type="image/webp"
-                    media="(max-width: 768px)"
-                  />
-                  <source
-                    srcset="images/content/slider-img.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    loading="lazy"
-                    src="images/content/slider-img.png"
-                    alt="slider"
-                  />
-                </picture>
-                <div class="top__slider-info">
-                  <h2 class="top__slider-title">Furniture collection</h2>
-                  <p class="top__slider-text">
-                    Deep v you probably haven't heard of them banh mi synth
-                    actually affogato. Aesthetic lyft ethical drinking vinegar
-                    austint
-                  </p>
+              <div class="col-sm-6">
+                <div class="block-counter-1 block-counter-1-sm text-sm-left text-right">
+                  <span class="number " id="line__number">
+                    <span data-number="38" >0</span>
+                  </span>
+                  <span class="caption text-black">Orphanage</span>
                 </div>
               </div>
             </div>
+
           </div>
-        </section>
-        <section class="new__collection">
-          <div class="container-fluid">
-            <h3 class="new__collection-title">Furniture new collection</h3>
-            <p class="new__collection-text">
-              Deep v you probably haven't heard of them banh mi synth actually
-              affogato. Aesthetic lyft ethical drinking vinegar austint
-            </p>
-            <div class="collection">
-              <a class="collection__item" href="#">
-                <picture>
-                  <source
-                    srcset="images/content/collection-1.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    loading="lazy"
-                    src="images/content/collection-1.jpg"
-                    alt="collection"
-                  />
-                </picture>
-                <div class="collection__info">
-                  <h6 class="collection__info-title">
-                    Truffaut literally trust
-                  </h6>
-                  <p class="collection__info-text">
-                    Living room furntiture | Chair
-                  </p>
-                </div>
-              </a>
-              <a class="collection__item" href="#">
-                <picture>
-                  <source
-                    srcset="images/content/collection-2.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    loading="lazy"
-                    src="images/content/collection-2.jpg"
-                    alt="collection-1"
-                  />
-                </picture>
-                <div class="collection__info">
-                  <h6 class="collection__info-title">
-                    Truffaut literally trust
-                  </h6>
-                  <p class="collection__info-text">
-                    Living room furntiture | Chair
-                  </p>
-                </div>
-              </a>
-              <a class="collection__item" href="#">
-                <picture>
-                  <source
-                    srcset="images/content/collection-3.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    loading="lazy"
-                    src="images/content/collection-3.jpg"
-                    alt="collection-3"
-                  />
-                </picture>
-                <div class="collection__info">
-                  <h6 class="collection__info-title">
-                    Truffaut literally trust
-                  </h6>
-                  <p class="collection__info-text">
-                    Living room furntiture | Chair
-                  </p>
-                </div>
-              </a>
-              <a class="collection__item" href="#">
-                <picture>
-                  <source
-                    srcset="images/content/collection-4.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    loading="lazy"
-                    src="images/content/collection-4.jpg"
-                    alt="collection-4"
-                  />
-                </picture>
-                <div class="collection__info">
-                  <h6 class="collection__info-title">
-                    Truffaut literally trust
-                  </h6>
-                  <p class="collection__info-text">
-                    Living room furntiture | Chair
-                  </p>
-                </div>
-              </a>
-              <a class="collection__item" href="#">
-                <picture>
-                  <source
-                    srcset="images/content/collection-5.webp"
-                    type="image/webp"
-                  />
-                  <img
-                    loading="lazy"
-                    src="images/content/collection-5.jpg"
-                    alt="collection-5"
-                  />
-                </picture>
-                <div class="collection__info">
-                  <h6 class="collection__info-title">
-                    Truffaut literally trust
-                  </h6>
-                  <p class="collection__info-text">
-                    Living room furntiture | Chair
-                  </p>
-                </div>
-              </a>
-            </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="site-section bg-image overlay" style="background-image: url('images/hero_1_no-text.webp');" id="donate-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-5 text-center">
+            <h2 class="text-white mb-4">Make A Donation Now! You May Change Lives Forever</h2>
+            <p><a href="#" class="btn btn-primary px-4 py-3 btn-block">Donate Now</a></p>
           </div>
-        </section>
-        <section class="decor">
-          <div class="container">
-            <h2 class="decor__title">
-              Aesthetic<br />
-              ethical drinking
-            </h2>
-            <p class="decor__text">
-              Deep v you probably haven't heard of them banh mi synth actually
-              affogato. Artlyft ethical the one drinking vinegar austint
-            </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-piggy-bank d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Make Donation</h3>
+            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
           </div>
-        </section>
-        <section class="work">
-          <div class="container">
-            <h3 class="work-title">How it works</h3>
-            <div class="work__items">
-              <div class="work__items-box">
-                <div class="work__item work__item--consult">
-                  <img
-                    class="work__item-img"
-                    src="images/LinkedSprite.svg#src-5"
-                    width="40"
-                    height="40"
-                    alt="item"
-                  />
-                  <h6 class="work__item-title">Designer Consultation</h6>
-                  <p class="work__item-text">
-                    Kinfolk scenester authentic craft beer truffaut irony
-                    intelligentsia YOLO lomo bushwick coloring book. Semiotics
-                    man bun venmo viral cliche
-                  </p>
-                </div>
-                <div class="work__item work__item--production">
-                  <img
-                    class="work__item-img"
-                    src="images/LinkedSprite.svg#src-17"
-                    width="40"
-                    height="40"
-                    alt="item"
-                  />
-                  <h6 class="work__item-title">Production</h6>
-                  <p class="work__item-text">
-                    Everyday carry actually neutra authentic kogi shabby chic
-                  </p>
-                </div>
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-blood d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Medical Health</h3>
+            <p>Praesentium magnam pariatur quae necessitatibus eligendi voluptate ducimus.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-food d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Food for the Poor</h3>
+            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
+          </div>
+
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-donation d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Help &amp; Love</h3>
+            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-dollar d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Give To The Needy</h3>
+            <p>Praesentium magnam pariatur quae necessitatibus eligendi voluptate ducimus.</p>
+          </div>
+          <div class="col-md-6 col-lg-4 mb-4 text-center">
+            <span class="flaticon-unity d-block mb-3 display-3 text-secondary"></span>
+            <h3 class="text-primary h4 mb-2">Volunteer</h3>
+            <p>Accusantium dignissimos voluptas rem consequatur ratione illo sit quasi.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="site-section" id="team-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center">
+          <div class="col-md-7 text-center">
+              <h2 class="text-black text-uppercase section-title">Our Leadership</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corporis, eius, eos consectetur consequuntur sit. Aut, perspiciatis, reprehenderit.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up">
+            <div class="block-team-member-1 text-center rounded">
+              <figure>
+                <picture>
+                <source srcset="images/person_1-small.webp" type='image/webp'>
+                <source srcset="images/person_1-small.avif" type='image/avif'>
+                <img loading='lazy' class="mx-auto img-fluid rounded-circle" src="images/person_1-small.jpg" width='130' height='130' alt='person-1'>
+                </picture>
+              </figure>
+              <h3 class="font-size-20">Jean Smith</h3>
+              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Mining Expert</span>
+              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, repellat. At, soluta. Repellendus vero, consequuntur!</p>
+              <div class="block-social-1">
+                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
+                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
+                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
               </div>
             </div>
-            <div class="work__item work__item-measurements">
-              <img
-                class="work__item-img"
-                src="images/LinkedSprite.svg#src-11"
-                width="40"
-                height="40"
-                alt="item"
-              />
-              <h6 class="work__item-title">Measurements</h6>
-              <p class="work__item-text">
-                Intelligentsia YOLO lomo bushwick coloring book. Semiotics man
-                bun venmo viral cliche
-              </p>
-            </div>
           </div>
-        </section>
-        <div class="gallery">
-          <div class="container-fluid">
-            <div class="gallery__buttons">
-              <button class="gallery__btn" data-filter=".bedroom">
-                Bedroom furniture</button
-              ><button class="gallery__btn" data-filter=".room">
-                Living room furniture</button
-              ><button class="gallery__btn" data-filter=".office">
-                Office furniture</button
-              ><button class="gallery__btn" data-filter=".dinning">
-                Dining room futniture</button
-              ><button class="gallery__btn" data-filter=".chair">Chair</button>
-            </div>
-            <div class="gallery__inner">
-              <div class="gallery__items mix bedroom">
-                <a href="#" class="gallery__item">
-                  <picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/1.jpg"
-                      width=""
-                      height=""
-                      alt="g-1"
-                    />
-                  </picture> </a
-                ><a href="#" class="gallery__item">
-                  <picture>
-                    <source srcset="images/gallery/2.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/2.jpg"
-                      width=""
-                      height=""
-                      alt="g-2"
-                    />
-                  </picture> </a
-                ><a href="#" class="gallery__item">
-                  <picture>
-                    <source srcset="images/gallery/3.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/3.jpg"
-                      width=""
-                      height=""
-                      alt="3"
-                    />
-                  </picture> </a
-                ><a href="#" class="gallery__item">
-                  <picture>
-                    <source srcset="images/gallery/4.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/4.jpg"
-                      width=""
-                      height=""
-                      alt="4"
-                    />
-                  </picture> </a
-                ><a href="#" class="gallery__item">
-                  <picture>
-                    <source srcset="images/gallery/5.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/5.jpg"
-                      width=""
-                      height=""
-                      alt="5"
-                    />
+
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="block-team-member-1 text-center rounded">
+              <figure>
+                <picture>
+                  <source srcset="images/person_2-small.webp" type='image/webp'>
+                  <source srcset="images/person_2-small.avif" type='image/avif'>
+                  <img loading='lazy' class="mx-auto img-fluid rounded-circle" src="images/person_2-small.jpg" width='130' height='130' alt='person-1'>
                   </picture>
-                </a>
+              </figure>
+              <h3 class="font-size-20 ">Bob Carry</h3>
+              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Project Manager</span>
+              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quia veritatis, nam quam obcaecati fuga.</p>
+              <div class="block-social-1">
+                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
+                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
+                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
               </div>
-              <div class="gallery__items mix room">
-                <a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/6.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/6.jpg"
-                      width=""
-                      height=""
-                      alt="6"
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/7.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/7.jpg"
-                      width=""
-                      height=""
-                      alt="7"
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/8.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/8.jpg"
-                      width=""
-                      height=""
-                      alt="8"
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/9.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/9.jpg"
-                      width=""
-                      height=""
-                      alt="9"
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/10.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/10.jpg"
-                      width=""
-                      height=""
-                      alt="10"
-                    /> </picture
-                ></a>
-              </div>
-              <div class="gallery__items mix office">
-                <a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src=".jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/4.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src=".jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src=".jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/9.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src=".jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/10.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src=".jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture
-                ></a>
-              </div>
-              <div class="gallery__items mix dinning">
-                <a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/1.jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/1.jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/1.jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/1.jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/1.jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture
-                ></a>
-              </div>
-              <div class="gallery__items mix chair">
-                <a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/10.jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/10.jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/10.jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/10.jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture></a
-                ><a href="#" class="gallery__item"
-                  ><picture>
-                    <source srcset="images/gallery/1.webp" type="image/webp" />
-                    <img
-                      loading="lazy"
-                      src="images/gallery/10.jpg"
-                      width=""
-                      height=""
-                      alt=""
-                    /> </picture
-                ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="block-team-member-1 text-center rounded">
+              <figure>
+                <picture>
+                  <source srcset="images/person_3-small.webp" type='image/webp'>
+                  <source srcset="images/person_3-small.avif" type='image/avif'>
+                  <img loading='lazy' class="mx-auto img-fluid rounded-circle" src="images/person_3-small.jpg" width='130' height='130' alt='person-1'>
+                  </picture>
+              </figure>
+              <h3 class="font-size-20 ">Ricky Fisher</h3>
+              <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">Engineer</span>
+              <p class="px-3 mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quidem, laudantium, illum minus numquam voluptas?</p>
+              <div class="block-social-1">
+                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-facebook"></span></a>
+                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-twitter"></span></a>
+                <a href="#" class="btn border-w-2 rounded primary-primary-outline--hover"><span class="icon-instagram"></span></a>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <section class="blog-box">
-        <div class="container">
-          <h3 class="blog-box__title">More inspiration ideas in our blog</h3>
-          <div class="blog-box__items">
-            <div class="blog-box__item">
-              <a href="#" class="blog-box__img-link">
-                <picture>
-                  <source srcset="images/blog-1.webp" type="image/webp" />
-                  <img
-                    loading="lazy"
-                    src="images/blog-1.jpg"
-                    width=""
-                    height=""
-                    alt="blog-1"
-                  />
-                </picture>
-                <div class="blog-box__links">
-                  <span class="blog-box__date">March 12, 2020</span>|<a
-                    href=""
-                    class="blog-box__author"
-                    >by Ann Summers</a
-                  >|<a href="" class="blog-box__theme">Inrerior </a>
-                </div>
-                <a href="#" class="blog-box__title-link">
-                  <h4 class="blog-box__item-title">
-                    Listicle actually selvage activated charcoal for the
-                    drinking vinegar
-                  </h4>
-                </a>
-              </a>
-            </div>
-            <div class="blog-box__item">
-              <a href="#" class="blog-box__img-link">
-                <picture>
-                  <source srcset="images/blog-2.webp" type="image/webp" />
-                  <img
-                    loading="lazy"
-                    src="images/blog-2.jpg"
-                    width=""
-                    height=""
-                    alt="blog-2"
-                  />
-                </picture>
-                <div class="blog-box__links">
-                  <span class="blog-box__date">September 28,2020</span>|<a
-                    href=""
-                    class="blog-box__author"
-                    >by Finnagan Morningstar</a
-                  >|<a href="" class="blog-box__theme">Dining room interior</a>
-                </div>
-                <a href="" class="blog-box__title-link">
-                  <h4 class="blog-box__item-title">
-                    Red selfies edison bulb four dollar toast humblebrag
-                  </h4>
-                </a>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer">
-        <div class="footer__content">
-          <div class="container">
-            <div class="footer__inner">
-              <div class="footer__info">
-                <h6 class="footer__info-title">Contact Us</h6>
-                <p class="footer__info-text">
-                  Keffiyeh poutine etsy, paleo cray put a bird on it microdosing
-                  schlitz you probably occupy
-                </p>
-                <a class="footer__info-email" href="mailto:test@mail.test"
-                  >test@mail.test</a
-                >
-                <form action="" class="footer__form">
-                  <input
-                    class="footer__form-input"
-                    type="email"
-                    placeholder="Subscribe by email"
-                  />
-                  <button class="footer__form-button" type="submit">
-                    Send
-                  </button>
-                </form>
-              </div>
-              <ul class="footer__social">
-                <li class="footer__social-item">
-                  <a
-                    class="footer__social-link footer__social-link--facebook"
-                    href="#"
-                    >Facebook</a
-                  >
-                </li>
-                <li class="footer__social-item">
-                  <a
-                    class="footer__social-link footer__social-link--insta"
-                    href="#"
-                    >Instagram</a
-                  >
-                </li>
-                <li class="footer__social-item">
-                  <a
-                    class="footer__social-link footer__social-link--pinterest"
-                    href="#"
-                    >Pinterest</a
-                  >
-                </li>
-                <li class="footer__social-item">
-                  <a
-                    class="footer__social-link footer__social-link--whatsapp"
-                    href="#"
-                    >WhatsApp</a
-                  >
-                </li>
-                <li class="footer__social-item">
-                  <a
-                    class="footer__social-link footer__social-link--youtube"
-                    href="#"
-                    >Youtube</a
-                  >
-                </li>
-              </ul>
-              <nav class="footer__menu">
-                <ul class="footer__menu-list">
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="#">Delivery</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="#">FAQ</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="#">Help</a>
-                  </li>
-                  <li class="footer__menu-item">
-                    <a class="footer__menu-link" href="#">More About Us</a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div class="footer__copyright">
-          <div class="container">
-            <p>674 Gonzales Drive. Washington, PA 15301</p>
-          </div>
-        </div>
-      </footer>
     </div>
 
-    <script src="js/main.min.js"></script>
+    
+    
+    <div class="site-section block-13 overlay bg-image" id="testimonials-section" data-aos="fade" style="background-image: url('images/hero_1_no-text.webp');">
+      <div class="container">
+        
+        <div class="text-center mb-5">
+          <h2 class="text-white text-uppercase section-title">Testimonial</h2>
+        </div>
+
+        <div class="owl-carousel nonloop-block-13">
+          <div>
+            <div class="block-testimony-1 text-center">
+              
+              <blockquote class="mb-4">
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>
+              </blockquote>
+
+              <figure>
+                <picture>
+                  <source srcset="images/person_4-small.webp" type='image/webp'>
+                  <source srcset="images/person_4-small.avif" type='image/avif'>
+                  <img loading='lazy' class="img-fluid rounded-circle mx-auto" src="images/person_4-small.jpg" width='130' height='130' alt='person-1'>
+                  </picture>
+              </figure>
+              <h3 class="font-size-20 text-white">Ricky Fisher</h3>
+            </div>
+          </div>
+
+          <div>
+            <div class="block-testimony-1 text-center">
+              <blockquote class="mb-4">
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>
+              </blockquote>
+
+              <figure>
+                <picture>
+                  <source srcset="images/person_2-small.webp" type='image/webp'>
+                  <source srcset="images/person_2-small.avif" type='image/avif'>
+                  <img loading='lazy' class="img-fluid rounded-circle mx-auto" src="images/person_2-small.jpg" width='130' height='130' alt='person-1'>
+                  </picture>
+              </figure>
+              <h3 class="font-size-20 text-white">Ken Davis</h3>
+            </div>
+          </div>
+
+          <div>
+            <div class="block-testimony-1 text-center">
+              <blockquote class="mb-4">
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>
+              </blockquote>
+
+              <figure>
+                <picture>
+                  <source srcset="images/person_1-small.webp" type='image/webp'>
+                  <source srcset="images/person_1-small.avif" type='image/avif'>
+                  <img loading='lazy' class="img-fluid rounded-circle mx-auto" src="images/person_1-small.jpg" width='130' height='130' alt='person-1'>
+                  </picture>
+              </figure>
+              <h3 class="font-size-20 text-white">Mellisa Griffin</h3>
+            </div>
+          </div>
+
+          <div>
+            <div class="block-testimony-1 text-center">
+              <blockquote class="mb-4">
+                <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, fugit excepturi sapiente voluptatum nulla odio quaerat quibusdam tempore similique doloremque veritatis et cupiditate, maiores cumque repudiandae explicabo tempora deserunt consequuntur?&rdquo;</p>
+              </blockquote>
+
+              <figure>
+                <picture>
+                  <source srcset="images/person_1-small.webp" type='image/webp'>
+                  <source srcset="images/person_1-small.avif" type='image/avif'>
+                  <img loading='lazy' class="img-fluid rounded-circle mx-auto" src="images/person_1-small.jpg" width='130' height='130' alt='person-1'>
+                  </picture>
+              </figure>
+              <h3 class="font-size-20 text-white">Robert Steward</h3>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+    
+
+
+    <div class="site-section" id="blog-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-7 text-center mb-5 text-center">
+            <h2 class="text-black text-uppercase section-title">Our Blog</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati ab possimus fugiat, autem aliquid, commodi quod voluptatum consectetur.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div>
+              <a href="single.html" class="mb-4 d-block">
+                <picture>
+                <source srcset="images/hero_1_no-text.webp" type='image/webp'>
+                <source srcset="images/hero_1_no-text.avif" type='image/avif'>
+                <img loading='lazy' class="mx-auto img-fluid rounded" src="images/hero_1_no-text.jpg" width='540' height='360' alt='hero_1_no-text'>
+                </picture>
+              </a>
+              <h2><a href="single.html">How to Invest In Investing Company</a></h2>
+              <p class="text-muted mb-3 text-uppercase small"><span class="mr-2">January 18, 2019</span> By <a href="single.html" class="by">James Cooper</a></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et suscipit iste libero neque. Vitae quidem ducimus voluptatibus nemo cum odio ab enim nisi, itaque, libero fuga veritatis culpa quis!</p>
+              <p><a href="single.html">Get Started</a></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div>
+              <a href="single.html" class="mb-4 d-block">
+                <picture>
+                  <source srcset="images/hero_2_no-text.webp" type='image/webp'>
+                  <source srcset="images/hero_2_no-text.avif" type='image/avif'>
+                  <img loading='lazy' class="mx-auto img-fluid rounded" src="images/hero_2_no-text.jpg" width='540' height='360' alt='hero_1_no-text'>
+                  </picture>
+              </a>
+              <h2><a href="single.html">How to Invest In Investing Company</a></h2>
+              <p class="text-muted mb-3 text-uppercase small"><span class="mr-2">January 18, 2019</span> By <a href="single.html" class="by">James Cooper</a></p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et suscipit iste libero neque. Vitae quidem ducimus voluptatibus nemo cum odio ab enim nisi, itaque, libero fuga veritatis culpa quis!</p>
+              <p><a href="single.html">Read More</a></p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="site-section bg-light" id="contact-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center mb-5">
+            <h2 class="text-black section-title text-uppercase">Contact Us</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 mb-5">
+            <form action="#" method="post">
+              <div class="form-group row">
+                <div class="col-md-6 mb-4 mb-lg-0">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="First name">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <input type="text" class="form-control" placeholder="Email address">
+                </div>
+              </div>
+
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6 ml-auto">
+                  <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
+                </div>
+              </div>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-8">
+                <h2 class="footer-heading mb-4">About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+              </div>
+              <div class="col-md-4 ml-auto">
+                <h2 class="footer-heading mb-4">Features</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Testimonials</a></li>
+                  <li><a href="#">Terms of Service</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4 ml-auto">
+
+            <form class="mb-5">
+              <div class="mb-5">
+                <h2 class="footer-heading mb-4">Some Paragraph</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat nostrum libero iusto dolorum vero atque aliquid.</p>
+              </div>
+              <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
+              <form action="#" method="post">
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+                </div>
+              </form>
+
+
+              <h2 class="footer-heading mb-4">Follow Us</h2>
+                <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+            
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <!--<script src="js/popper.min.js"></script> -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>-->
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/aos.js"></script>
+
+  <script src="js/main.js"></script>
+    
   </body>
 </html>
